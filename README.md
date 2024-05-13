@@ -1,2 +1,2 @@
-# FrequencyFingerprint-Algorithm
-powerful implementation of the Shazam Algorithm for audio fingerprinting. It enables efficient identification of audio recordings by generating frequency fingerprints and comparing them with a vast database.
+## How Shazam works? Frequency Matching Fingerprints Algorithm in Python
+Developing a simple prototype of Shazam in Python
