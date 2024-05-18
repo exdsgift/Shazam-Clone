@@ -13,3 +13,13 @@ Developing a simple prototype of Shazam in Python.
 ### Sources and requirements
 - requirements.py : easy install all the items usefull for this project
 - references.md : bibliography
+
+### Images
+
+![image1](https://github.com/exdsgift/MarkovChain_NLP/blob/main/images/pointers.png)
+
+![image2](https://github.com/exdsgift/MarkovChain_NLP/blob/main/images/pointers.png)
+
+![image3](https://github.com/exdsgift/MarkovChain_NLP/blob/main/images/pointers.png)
+
+![final_output](images/Screenshot 2024-05-18 alle 12.04.17.png)
