@@ -16,10 +16,12 @@ Developing a simple prototype of Shazam in Python.
 
 ### Images
 
-![image1](https://github.com/exdsgift/MarkovChain_NLP/blob/main/images/pointers.png)
+![image1](https://github.com/exdsgift/FrequencyFingerprint-Algorithm/blob/main/images/output.png)
 
-![image2](https://github.com/exdsgift/MarkovChain_NLP/blob/main/images/pointers.png)
+![image2](https://github.com/exdsgift/FrequencyFingerprint-Algorithm/blob/main/images/output2.png)
 
-![image3](https://github.com/exdsgift/MarkovChain_NLP/blob/main/images/pointers.png)
+![image3](https://github.com/exdsgift/FrequencyFingerprint-Algorithm/blob/main/images/output3.png)
 
-![final_output](images/Screenshot 2024-05-18 alle 12.04.17.png)
+final results:
+
+![final_output](https://github.com/exdsgift/FrequencyFingerprint-Algorithm/blob/main/images/Screenshot%202024-05-18%20alle%2012.04.17.png)
