@@ -2,6 +2,9 @@
 - https://www.researchgate.net/publication/220723446_An_Industrial_Strength_Audio_Search_Algorithm#fullTextFileContent
 - https://hpac.cs.umu.se/teaching/sem-mus-17/Reports/Froitzheim.pdf
 
+> Online resources:
+- https://michaelstrauss.dev/shazam-in-python
+
 > Text Books:
 - MMDS, 3.8.4 (Matching Fingerprints) (http://infolab.stanford.edu/~ullman/mmds/ch3n.pdf)
 
