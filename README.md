@@ -16,7 +16,7 @@ Developing a simple prototype of Shazam in Python.
 
 ### Costellation map
 
-![image5](https://github.com/exdsgift/FrequencyFingerprint-Algorithm/blob/main/images/5.jpeg)
+![image5](https://github.com/exdsgift/FrequencyFingerprint-Algorithm/blob/main/images/6.jpeg)
 
 ### Test with some different noise
 
