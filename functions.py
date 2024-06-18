@@ -150,11 +150,11 @@ def pitc_shift(signal, rate, n_steps):
     shifted_signal = librosa.effects.pitch_shift(y = signal.astype(float), sr = rate, n_steps = n_steps)
     return shifted_signal
 
-def create_shifted_files(original_song, folder_name):
+def create_pitched_files(original_song, folder_name):
     for pitc in np.arange(0, 10, 0.25):
         rate, data = wav.read(original_song)
         clipped_data = pitc_shift(data, rate, pitc)
-        file_location = f'{folder_name}/clipping_{pitc}.wav'
+        file_location = f'{folder_name}/pitched_{pitc}.wav'
         wav.write(file_location, rate, clipped_data.astype(np.int16))
 
 # SHORTER FILES
