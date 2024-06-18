@@ -179,7 +179,7 @@ def scores_different_lenght(directory, database, song_name_index):
     return conteggio
 
 # REMOVE FILES
-def remove_created_audio_files(directory):
+def remove_created_audio_files_start(directory):
     print('----------------------')
     for dir in os.listdir('pitch'):
         for audio in os.listdir(directory + '/' + dir):
@@ -187,3 +187,34 @@ def remove_created_audio_files(directory):
         print('deleted files in directory ' + directory + '/' + dir)
     print('----------------------')
 
+def remove_created_audio_files_end(directory):
+    print('----------------------')
+    for dir in os.listdir('pitch'):
+        for audio in os.listdir(directory + '/' + dir):
+            os.remove(directory + '/' + dir + '/' + audio)
+        file_path = directory + '/' + dir + '/.gitkeep'
+        fd = os.open(file_path, os.O_CREAT | os.O_WRONLY)
+        os.close(fd)
+        print('deleted files in directory ' + directory + '/' + dir)
+    print('----------------------')
+
+def remove_short_recordings_end(directory):
+    for dir in os.listdir(directory):
+        if dir == 'original':
+            continue
+        else:
+            for file in os.listdir(directory + '/' + dir):
+                os.remove(directory + '/' + dir + '/' + file)
+            print('Removed files in ' + directory + '/' + dir)
+            file_path = directory + '/' + dir + '/.gitkeep'
+            fd = os.open(file_path, os.O_CREAT | os.O_WRONLY)
+            os.close(fd)
+
+def remove_short_recordings_start(directory):
+    for dir in os.listdir(directory):
+        if dir == 'original':
+            continue
+        else:
+            for file in os.listdir(directory + '/' + dir):
+                os.remove(directory + '/' + dir + '/' + file)
+            print('Removed files in ' + directory + '/' + dir)
