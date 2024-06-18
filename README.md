@@ -14,14 +14,16 @@ Developing a simple prototype of Shazam in Python.
 - requirements.py : easy install all the items usefull for this project
 - references.md : bibliography
 
-### Images
+### Costellation map
 
-![image1](https://github.com/exdsgift/FrequencyFingerprint-Algorithm/blob/main/images/output.png)
+![image5](https://github.com/exdsgift/FrequencyFingerprint-Algorithm/blob/main/images/5.jpeg)
 
-![image2](https://github.com/exdsgift/FrequencyFingerprint-Algorithm/blob/main/images/output2.png)
+### Test with some different noise
 
-![image3](https://github.com/exdsgift/FrequencyFingerprint-Algorithm/blob/main/images/output3.png)
+![image1](https://github.com/exdsgift/FrequencyFingerprint-Algorithm/blob/main/images/1.png)
+![image1](https://github.com/exdsgift/FrequencyFingerprint-Algorithm/blob/main/images/2.png)
+![image1](https://github.com/exdsgift/FrequencyFingerprint-Algorithm/blob/main/images/3.png)
 
-final results:
+### Snippet with different lenght
+![image4](https://github.com/exdsgift/FrequencyFingerprint-Algorithm/blob/main/images/4.png)
 
-![final_output](https://github.com/exdsgift/FrequencyFingerprint-Algorithm/blob/main/images/Screenshot%202024-05-18%20alle%2012.04.17.png)
