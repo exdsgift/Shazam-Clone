@@ -83,7 +83,6 @@ def score_hashes_against_database(hashes, database):
                 max = (offset, score)
         
         scores[song_index] = max
-    # Sort the scores for the user
     scores = list(sorted(scores.items(), key=lambda x: x[1][1], reverse=True)) 
     
     return scores
@@ -99,9 +98,7 @@ def print_top_five(file_name, database, song_name_index):
         print(f"{song_name_index[song_id]}: Score of {score[1]} at {score[0]}")
 
 def print_top_one(file_name, database, song_name_index):
-    # Load a short recording with some background noise
     Fs, audio_input = read(file_name)
-    # Create the constellation and hashes
     constellation = create_constellation(audio_input, Fs)
     hashes = create_hashes(constellation, None)
     scores = score_hashes_against_database(hashes, database)[:1]
@@ -218,3 +215,29 @@ def remove_short_recordings_start(directory):
             for file in os.listdir(directory + '/' + dir):
                 os.remove(directory + '/' + dir + '/' + file)
             print('Removed files in ' + directory + '/' + dir)
+
+def remove_directories(directory, arange):
+    for noise in arange:
+        for dir in os.listdir(directory):
+            dir_path = os.path.join(directory, dir)
+            if os.path.isdir(dir_path) and dir not in ['goosebumps', 'tears', 'popstar']:
+                for file in os.listdir(dir_path):
+                    file_path = os.path.join(dir_path, file)
+                    os.remove(file_path)
+                os.rmdir(dir_path)
+
+# CREATE DISTRUBED REGISTRATIONS AND DIRECTORIES
+def create_disturbed_registrations(directory, arange, noise_funct):
+    for pitc in arange:
+        os.mkdir(f'{directory}/{pitc}')
+        for file in os.listdir('converted_memo/original'):
+            if file.endswith('.wav'):
+                rate, data = wav.read(f'converted_memo/original/{file}')
+                if noise_funct == pitc_shift:
+                    pitched_data = noise_funct(data, rate, pitc)
+                    file_location = f'{directory}/{pitc}/{file}'
+                    wav.write(file_location, rate, pitched_data.astype(np.int16))
+                else:
+                    pitched_data = noise_funct(data, pitc)
+                    file_location = f'{directory}/{pitc}/{file}'
+                    wav.write(file_location, rate, pitched_data.astype(np.int16))
